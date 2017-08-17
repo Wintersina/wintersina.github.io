@@ -1,0 +1,162 @@
+
+                  html, body {     margin:0;
+                                   padding:0;
+                                   height:100%;
+                                   }
+
+                  body {           background-color:#2069b2;
+                                   background-image:url(tile.gif);
+                                   text-align:center;
+                                   overflow-y: Hidden;
+                                   }
+
+                  img {            opacity: 0.88;
+                                   border:5px solid #FFFFFF; margin:5px;
+                     -webkit-transition: all 200ms ease-in-out;
+                     -moz-transition: all 200ms ease-in-out;
+                     -o-transition: all 200ms ease-in-out;
+                     transition: all 200ms ease-in-out;
+                                   }
+
+                  img:hover {    opacity: 1.0;
+                                 border-color: #9c8e5c; /* box-shadow:1px 1px 6px rgba(0, 0, 0, 0.2); */
+                  }
+
+
+                        a, a:link, a:active, a:visited {
+                                color: black;
+                        }
+                        a:hover {
+                                color: #9E1F63;
+                        }
+                        .list_carousel {
+                                width: auto;
+                                margin-left: 25px;
+                                margin-right: 25px;
+                        }
+                        .list_carousel ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                                display: block;
+                        }
+                        .list_carousel li {
+                              height: 120px;
+                              padding: 0;
+                              margin: 0px;
+                              display: block;
+                              float: left;
+                              }
+
+                  #myHideText {
+                     font-family: 'open_sans_condensed', sans-serif;
+                                   display: block;
+                                   position: absolute;
+                                   float: left;
+                     opacity:0.4;
+                     font-size:20px;
+                     text-decoration: none;
+                     color:#ffffff;
+                     left:0;
+                     bottom: 126;
+                     margin-left:105px;
+                     margin-top:0px;
+                     }
+
+                        #prev-bg-left {
+                                   float: left;
+                                   width: 55px;
+                                   height: 120px;
+                                   display: block;
+                                   position: absolute;
+                                   bottom: -40px;
+                                   left:-15px;
+                        }
+                        #prev-bg-right {
+                                   float: right;
+                                   width: 55px;
+                                   height: 120px;
+                                   display: block;
+                                   position: absolute;
+                                   bottom: -40px;
+                                   right:-15px;
+                        }
+
+                        .prev {
+                                float: left;
+                                margin-left: 20px;
+                        }
+
+                        .next {
+                                float: right;
+                                margin-right: 10px;
+                        }
+
+                           a.prev, a.next {
+                                   background: url(sprite.png) no-repeat transparent;
+                                   width: 45px;
+                                   height: 50px;
+                                   display: block;
+                                   position: absolute;
+                                   bottom: 43px;
+                           }
+                           a.prev {      left: -6px;
+                                         background-position: 0 -50px; }
+                           a.prev:hover {      background-position: 0 0; }
+                           a.prev.disabled {   background-position: 0 -100px !important;  }
+                           a.next {      right: 6px;
+                                         background-position: -50px -50px; }
+                           a.next:hover {                background-position: -50px 0px; }
+                           a.next.disabled {   background-position: -50px -100px !important;  }
+                           a.prev.disabled, a.next.disabled { cursor: default; }
+
+                           a.prev span, a.next span { display: none; }
+
+                           .pagination { margin-top:8px;
+                                         margin-bottom:4px;
+                                         text-align: center; }
+
+                           .pagination a {
+                                       opacity: 0.9;
+                                       background: url(sprite.png) 0 -300px no-repeat transparent;
+                                       width: 15px;
+                                       height: 15px;
+                                       margin: 0 5px 0 0;
+                                       display: inline-block;
+                                   }
+                           .pagination a:hover {
+                                       opacity: 1.0; }
+
+                           .pagination a.selected {
+                                       background-position: -25px -300px;
+                                       cursor: default;
+                                   }
+                           .pagination a span { display: none; }
+
+                           .clearfix {
+                                   float: none;
+                                   clear: both;
+                           }
+
+
+                  @font-face {
+                      font-family: 'open_sans_condensedbold';
+                      src: url('fonts/OpenSans-CondBold-webfont.eot');
+                      src: url('fonts/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+                           url('fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+                           url('fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+                           url('fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold') format('svg');
+                      font-weight: normal;
+                      font-style: normal;
+                  }
+
+                  @font-face {
+                      font-family: 'open_sans_condensed';
+                      src: url('fonts/OpenSans-CondLight-webfont.eot');
+                      src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+                           url('fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+                           url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
+                           url('fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+                      font-weight: normal;
+                      font-style: normal;
+                  }
